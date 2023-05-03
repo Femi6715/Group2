@@ -1,16 +1,18 @@
-# This is a sample Python scrip
+def request():
+    Reading1 = input('Enter Reading1:')
+    Reading2 = input('Enter Reading2:')
+    Reading3 = input('Enter Reading3:')
+    Reading4 = input('Enter Reading4:')
+    print('sum=', addition (Reading1,Reading2,Reading3,Reading4))
+    print('Average temperature=', Average (Reading1,Reading2,Reading3,Reading4))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def addition(Reading1,Reading2,Reading3,Reading4):
+    sum = int(Reading1) + int(Reading2) + int(Reading3) + int(Reading4)
+    return sum
 
+def Average (Reading1,Reading2,Reading3,Reading4):
+    sum = int(Reading1) + int(Reading2) + int(Reading3) + int(Reading4)
+    Average = sum / 4
+    return Average
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+request()
