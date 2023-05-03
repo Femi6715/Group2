@@ -16,3 +16,5 @@ def Average (Reading1,Reading2,Reading3,Reading4):
     return Average
 
 request()
+
+#start
