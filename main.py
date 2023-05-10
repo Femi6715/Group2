@@ -1,20 +1,28 @@
 def request():
-    Reading1 = input('Enter Reading1:')
-    Reading2 = input('Enter Reading2:')
-    Reading3 = input('Enter Reading3:')
-    Reading4 = input('Enter Reading4:')
-    print('sum=', addition (Reading1,Reading2,Reading3,Reading4))
-    print('Average temperature=', Average (Reading1,Reading2,Reading3,Reading4))
+    Reading1 = float(input('Enter Reading1:'))
+    Reading2 = float(input('Enter Reading2:'))
+    Reading3 = float(input('Enter Reading3:'))
+    Reading4 = float(input('Enter Reading4:'))
+    sum_result = addition(Reading1, Reading2, Reading3, Reading4)
+    avg_result = Average(Reading1, Reading2, Reading3, Reading4)
+    celcius_result = convert_fahrenheit_to_celsius(avg_result)
 
-def addition(Reading1,Reading2,Reading3,Reading4):
-    sum = int(Reading1) + int(Reading2) + int(Reading3) + int(Reading4)
-    return sum
+    print('Sum =', sum_result)
+    print('Average temperature in fahrenheit=', avg_result)
+    print('Average temperature in Celsius =', celcius_result)
 
-def Average (Reading1,Reading2,Reading3,Reading4):
-    sum = int(Reading1) + int(Reading2) + int(Reading3) + int(Reading4)
-    Average = sum / 4
-    return Average
+
+
+
+def addition(Reading1, Reading2, Reading3, Reading4):
+    return Reading1 + Reading2 + Reading3 + Reading4
+
+
+def Average(Reading1, Reading2, Reading3, Reading4):
+    return (Reading1 + Reading2 + Reading3 + Reading4) / 4
+
+
+
+
 
 request()
-
-#start
