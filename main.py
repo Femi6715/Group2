@@ -9,7 +9,7 @@ def request():
 
     print('Sum =', sum_result)
     print('Average temperature in fahrenheit=', avg_result)
-    print('Average temperature in Celsius =', celcius_result)
+
 
 
 
@@ -22,7 +22,8 @@ def Average(Reading1, Reading2, Reading3, Reading4):
     return (Reading1 + Reading2 + Reading3 + Reading4) / 4
 
 
-
+def convert_fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5 / 9
 
 
 request()
