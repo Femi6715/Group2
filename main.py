@@ -13,6 +13,15 @@ def request():
     print('Average temperature in Celsius =', celcius_result)
 
 
+    if celcius_result >= 50:
+        print('Temperature: Hot')
+    elif 3 <= celcius_result < 50:
+        print('Temperature: Warm')
+    elif 0 <= celcius_result < 30:
+        print('Temperature: Cold')
+    else:
+        print('Temperature: Extreme Cold')
+
 
 #
 
